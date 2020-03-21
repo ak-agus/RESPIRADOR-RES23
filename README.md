@@ -1,5 +1,5 @@
 # RESPIRADOR-RES23
-
+ENLACE DE GITLAB CON DOCUMENTACION DE PCB Y ELECTRONICA https://gitlab.com/coronavirusmakers/reespirator-doc
 
 # REESArg-Sistema-de-respiración-asistida-para-pre-terapia
 Repositorio para las diferentes versiones del código que se puedan realizar mejoras u Cambios. 
@@ -18,3 +18,6 @@ Repositorio para las diferentes versiones del código que se puedan realizar mej
 link de como funciona y como calibrar un respirador https://youtu.be/L3JfeOy8Zkw
 
 Foro con impresion 3d de piezas para respirador https://underc0de.org/foro/impresiones-3d/
+
+
+ENLACE DE GITLAB CON DOCUMENTACION DE PCB Y ELECTRONICA https://gitlab.com/coronavirusmakers/reespirator-doc

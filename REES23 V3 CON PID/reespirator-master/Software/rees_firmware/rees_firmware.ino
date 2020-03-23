@@ -40,7 +40,7 @@ Encoder encoder(
   SWpin
 );
 Display display = Display();
-MechVentilation ventilation;
+MechVentilation *ventilation;
 
 // =========================================================================
 // SETUP
@@ -235,11 +235,11 @@ void setup()
 
   // configura la ventilación
   if (tieneTrigger) {
-    ventilation = MechVentilation(volumenTidal, tIns, tEsp, speedIns, speedEsp, flujoTrigger);
+    ventilation = new MechVentilation(volumenTidal, tIns, tEsp, speedIns, speedEsp, flujoTrigger);
   } else {
-    ventilation = MechVentilation(volumenTidal, tIns, tEsp, speedIns, speedEsp);
+    ventilation = new MechVentilation(volumenTidal, tIns, tEsp, speedIns, speedEsp);
   }
-  ventilation.start();
+  ventilation->start();
   delay(500);
   display.clear();
 }
@@ -251,7 +251,7 @@ void setup()
 void loop() {
   display.writeLine(0, "Operando...");
   // TODO: display.writeLine(1, "TODO Prompt ventilation status");
-  ventilation.update();
+  ventilation->update();
 
 
   // TODO: si hay nueva configuración: cambiar parámetros escuchando entrada desde el encoder
